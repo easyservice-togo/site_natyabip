@@ -37,6 +37,34 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
     integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .custom-btn {
+      display: inline-block;
+      position: relative;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fd590d;
+      /* Texte orange */
+      background-color: #fff;
+      /* Fond blanc */
+      border: 2px solid #fd590d;
+      /* Bordure orange */
+      text-decoration: none;
+      overflow: hidden;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #443302;
+      /* Fond gris au survol */
+      color: #fff;
+      /* Texte blanc au survol */
+    }
+
+    .custom-btn i {
+      margin-left: 5px;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -122,7 +150,8 @@
 
           <div class="col-lg-6">
             <div class="hero-image">
-              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid" data-aos="fade-up"
+                data-aos-delay="100">
 
               <div class="customers-badge">
                 <div class="customer-avatars">
@@ -765,13 +794,13 @@
 
           <!-- Basic Plan -->
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-card " style="background-color: #f38f54; color: #fff;">
+            <div class="pricing-card popular" style="background-color: #f38f54; color: #fff;">
               <!-- <div class="popular-badge">Most Popular</div> -->
               <h3>STARTER</h3>
               <h4>5 000 <span class="period">SMS</span></h4>
               <div class="price">
                 <span class="amount">10</span>
-                <span class="currency">F.CFA</span>
+                <span class="currency" style="color:white;">F.CFA</span>
                 <span class="period">/ sms</span>
               </div>
               <!-- <ul class="features-list">
@@ -789,7 +818,7 @@
                 </li>
               </ul> -->
 
-              <a href="#contact" class="btn btn-primary">
+              <a href="#contact" class="btn " style="background-color: #fff; color: #fd590d;">
                 Acheter
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -822,7 +851,7 @@
                 </li>
               </ul> -->
 
-              <a href="#contact" class="btn btn-primary">
+              <a href="#contact" class="btn " style="background-color: #fff; color: #fd590d;">
                 Acheter
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -831,7 +860,7 @@
 
           <!-- Premium Plan -->
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-card" style="background-color: #f56512; color: #fff;">
+            <div class="pricing-card popular" style="background-color: #f56512; color: #fff;">
               <h3>BUSINESS</h3>
               <h4>50 001 - 100 000 <span class="period">SMS</span></h4>
               <div class="price">
@@ -854,7 +883,7 @@
                 </li>
               </ul> -->
 
-              <a href="#contact" class="btn btn-primary">
+              <a href="#contact" class="btn " style="background-color: #fff; color: #fd590d;">
                 Acheter
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
@@ -885,7 +914,7 @@
                 </li>
               </ul> -->
 
-              <a href="#contact" class="btn btn-primary">
+              <a href="#contact" class="btn custom-btn" id="buy">
                 Acheter
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
