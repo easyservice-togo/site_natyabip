@@ -1,0 +1,168 @@
+{
+    "countries_payements": [
+        {
+            "name": "Togo",
+            "payment_methods": [
+                {
+                    "method": "Mobile Money",
+                    "sub_methods": [
+                        {
+                            "name": "Flooz",
+                            "instructions": "Transférer :\nFlooz : *155*2*2*97952795*code secret#\n\nFrais de processing : 3%. Exemple : pour 10 000, il faut transférer 10 300."
+                        },
+                        {
+                            "name": "Yas",
+                            "instructions": "Transférer :\nYas : *145*5*Montant*1000316*Code secret#\n\nFrais de processing : 3%. Exemple : pour 10 000, il faut transférer 10 300."
+                        }
+                    ],
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                },
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Benin",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Cote d'Ivoire",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Senegal",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Gabon",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "France",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "USA",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Allemagne",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Belgique",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Burkina Faso",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Cameroun",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Canada",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Guinée équatoriale",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "Mali",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        },
+        {
+            "name": "RDC",
+            "payment_methods": [
+                {
+                    "method": "PayPal",
+                    "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                }
+            ]
+        }
+    ]
+}

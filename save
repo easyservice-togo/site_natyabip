@@ -1,0 +1,5 @@
+il  y a un souci quand je choisi par exemple le benin 
+vu que ce n'est qu'une seule méthode de disponible 
+l'évènement change sur le sélecteur de pays charge directement la methode sur le sélecteur 
+comme c'est une seul méthode de disponible on ne peut plus avoir l'évènement change sur le sélecteur de methode 
+et donc on ne peut charger les instructions 
