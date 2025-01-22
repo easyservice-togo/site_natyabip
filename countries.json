@@ -1,0 +1,251 @@
+{
+    "countries_afford": [
+        {
+            "name": "Togo",
+            "networks": [
+                {
+                    "name": "Togocel",
+                    "tarif": 0.05
+                },
+                {
+                    "name": "Moov Africa Togo",
+                    "tarif": 0.04
+                }
+            ]
+        },
+        {
+            "name": "Benin",
+            "networks": [
+                {
+                    "name": "MTN Benin",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Moov Africa Benin",
+                    "tarif": 0.05
+                }
+            ]
+        },
+        {
+            "name": "Cote d'Ivoire",
+            "networks": [
+                {
+                    "name": "MTN Côte d'Ivoire",
+                    "tarif": 0.07
+                },
+                {
+                    "name": "Orange Côte d'Ivoire",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Moov Africa Côte d'Ivoire",
+                    "tarif": 0.05
+                }
+            ]
+        },
+        {
+            "name": "Senegal",
+            "networks": [
+                {
+                    "name": "Orange Senegal",
+                    "tarif": 0.08
+                },
+                {
+                    "name": "Tigo",
+                    "tarif": 0.07
+                },
+                {
+                    "name": "Expresso",
+                    "tarif": 0.06
+                }
+            ]
+        },
+        {
+            "name": "Gabon",
+            "networks": [
+                {
+                    "name": "Airtel Gabon",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Moov Africa Gabon Telecom",
+                    "tarif": 0.05
+                }
+            ]
+        },
+        {
+            "name": "France",
+            "networks": [
+                {
+                    "name": "Orange France",
+                    "tarif": 0.10
+                },
+                {
+                    "name": "SFR",
+                    "tarif": 0.09
+                },
+                {
+                    "name": "Bouygues Telecom",
+                    "tarif": 0.08
+                },
+                {
+                    "name": "Free Mobile",
+                    "tarif": 0.07
+                }
+            ]
+        },
+        {
+            "name": "USA",
+            "networks": [
+                {
+                    "name": "AT&T",
+                    "tarif": 0.12
+                },
+                {
+                    "name": "T-Mobile",
+                    "tarif": 0.11
+                },
+                {
+                    "name": "Verizon",
+                    "tarif": 0.10
+                },
+                {
+                    "name": "Sprint",
+                    "tarif": 0.09
+                }
+            ]
+        },
+        {
+            "name": "Allemagne",
+            "networks": [
+                {
+                    "name": "Telekom",
+                    "tarif": 0.08
+                },
+                {
+                    "name": "Vodafone",
+                    "tarif": 0.07
+                },
+                {
+                    "name": "O2 Germany",
+                    "tarif": 0.06
+                }
+            ]
+        },
+        {
+            "name": "Belgique",
+            "networks": [
+                {
+                    "name": "Proximus",
+                    "tarif": 0.07
+                },
+                {
+                    "name": "Orange Belgium",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Base",
+                    "tarif": 0.05
+                }
+            ]
+        },
+        {
+            "name": "Burkina Faso",
+            "networks": [
+                {
+                    "name": "Onatel",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Telecel Faso",
+                    "tarif": 0.05
+                },
+                {
+                    "name": "Moov Africa Burkina Faso",
+                    "tarif": 0.04
+                }
+            ]
+        },
+        {
+            "name": "Cameroun",
+            "networks": [
+                {
+                    "name": "MTN Cameroon",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Orange Cameroon",
+                    "tarif": 0.05
+                },
+                {
+                    "name": "Nexttel",
+                    "tarif": 0.04
+                }
+            ]
+        },
+        {
+            "name": "Canada",
+            "networks": [
+                {
+                    "name": "Rogers",
+                    "tarif": 0.11
+                },
+                {
+                    "name": "Bell",
+                    "tarif": 0.10
+                },
+                {
+                    "name": "Telus",
+                    "tarif": 0.09
+                }
+            ]
+        },
+        {
+            "name": "Guinée équatoriale",
+            "networks": [
+                {
+                    "name": "GETESA",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Muni",
+                    "tarif": 0.05
+                }
+            ]
+        },
+        {
+            "name": "Mali",
+            "networks": [
+                {
+                    "name": "Orange Mali",
+                    "tarif": 0.05
+                },
+                {
+                    "name": "Moov Africa Malitel",
+                    "tarif": 0.04
+                }
+            ]
+        },
+        {
+            "name": "RDC",
+            "networks": [
+                {
+                    "name": "Vodacom Congo",
+                    "tarif": 0.07
+                },
+                {
+                    "name": "Airtel RDC",
+                    "tarif": 0.06
+                },
+                {
+                    "name": "Orange RDC",
+                    "tarif": 0.05
+                },
+                {
+                    "name": "Africell",
+                    "tarif": 0.04
+                }
+            ]
+        }
+    ]
+}

@@ -672,7 +672,7 @@
 
       // Créer un lien pour chaque pays
       const countryLink = document.createElement('a');
-      countryLink.href = `#${country.name}`;  // Lien qui pourrait pointer vers une section spécifique ou une page
+      countryLink.href = `tarif.html?q=${country.name}`;  // Lien qui pourrait pointer vers une section spécifique ou une page
       countryLink.textContent = country.name;
       countryLink.classList.add('d-block', 'mb-2');  // Ajout d'un style de bloc et espacement entre les liens
 

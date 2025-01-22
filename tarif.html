@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>NatYaBip | Tarif <span class="country_name"></span></title>
+    <meta name="description"
+        content="NatYaBip, la plateforme incontournable de marketing par SMS. Simplifiez vos campagnes avec l’envoi groupé, la personnalisation, la segmentation ciblée et des rapports détaillés. Idéal pour entreprises, associations et commerces, notre outil garantit des résultats efficaces. Découvrez le SMS marketing facile et puissant avec Natyabip.">
+    <meta name="keywords"
+        content="Natyabip, easyservices sms, SMS Togo, Lomé SMS, Côte d'Ivoire SMS, Bénin SMS, Sénégal SMS, Gabon SMS, marketing par SMS, campagnes SMS, plateforme SMS, envoi SMS Afrique, communication SMS, service SMS professionnel, gestion campagnes SMS, solution SMS entreprise, SMS marketing Afrique, notifications SMS, envoi groupé SMS, SMS personnalisés, solutions communication Afrique, outils marketing Afrique, SMS publicitaire, messagerie instantanée Afrique">
+    <meta name="author" content="Natyabip - Easyservices">
+    <meta name="robots" content="index, follow">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="includes/aos/aos.css" rel="stylesheet">
+    <link href="includes/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="includes/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .custom-p {
+            font-size: 1.33em;
+        }
+
+        .custom-span {
+            font-size: 1.2em;
+        }
+
+        .custom-btn {
+            display: inline-block;
+            position: relative;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fd590d;
+            /* Texte orange */
+            background-color: #fff;
+            /* Fond blanc */
+            border: 0;
+            /* Bordure orange */
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: #443302;
+            /* Fond gris au survol */
+            color: #fff;
+            /* Texte blanc au survol */
+        }
+
+        .custom-btn i {
+            margin-left: 5px;
+        }
+
+        #map {
+            height: 350px;
+            width: 100%;
+        }
+
+        /* Effet Ripple */
+        .ripple1 {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.4);
+            animation: ripple-animation 2s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+        /* Effet de clignotement des marqueurs */
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div
+            class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <img src="assets/img/logo.png" alt="" height="60">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="index.html#about">A propos</a></li>
+                    <li><a href="index.html#services">Fonctionnalités</a></li>
+                    <li><a href="index.htmlpays.html" class="active">Pays couverts</a></li>
+                    <li><a href="index.html#pricing">Prix</a></li>
+                    <li><a href="index.html#faq">FaQ</a></li>
+                    <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" target="_blank" href="https://portail.natyabip.com/login">Connexion</a>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100" style="padding-bottom: 0px;">
+
+                <div class="row content justify-content-center align-items-center position-relative">
+                    <div class="col-lg-8 col-md-12  mx-auto text-center">
+                        <h2 class=" mb-4 fw-bold" style="font-family:'Montserrat', sans-serif;"> Envoyez des SMS
+                            professionnels en masse vers <span class="country_name"></span> à des tarifs compétitifs
+                        </h2>
+                        <!-- <p class="mb-4" style="font-size:1.080em;">Simplifiez vos campagnes SMS avec une plateforme intuitive et
+              performante. Connectez-vous à
+              vos clients en quelques clics et obtenez des résultats impressionnants.</p>
+            <a href="https://portail.natyabip.com/open-account" target="_blank" class="btn btn-cta">Essayez
+              maintenant</a> -->
+                    </div>
+
+                    <!-- Abstract Background Elements -->
+                    <div class="shape shape-1">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z"
+                                transform="translate(100 100)"></path>
+                        </svg>
+                    </div>
+
+                    <div class="shape shape-2">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z"
+                                transform="translate(100 100)"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Dot Pattern Groups -->
+                    <div class="dots dots-1">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+                            </pattern>
+                            <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
+                        </svg>
+                    </div>
+
+                    <div class="dots dots-2">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <pattern id="dot-pattern-2" x="0" y="0" width="20" height="20"
+                                patternUnits="userSpaceOnUse">
+                                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+                            </pattern>
+                            <rect width="100" height="100" fill="url(#dot-pattern-2)"></rect>
+                        </svg>
+                    </div>
+
+                    <div class="shape shape-3">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z"
+                                transform="translate(100 100)"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- /Call To Action Section -->
+        <div class="container text-center">
+            <h4 class="fw-bold" style="font-size: 2rem;"> Opérateurs disponibles pour l'envoi de SMS vers <span
+                    class="country_name"></span></h4>
+            <div class="alert alert-warning" role="alert" id="operators">
+
+            </div>
+
+        </div>
+        <section class="map-area container rounded" style="margin-top: -30px;">
+
+        </section>
+        <div class="container">
+            <div class="row" id="countries-list">
+                <!-- Les pays seront ajoutés ici dynamiquement -->
+            </div>
+        </div>
+
+        <!-- Clients Section -->
+        <section id="clients" class="clients section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section><!-- /Clients Section -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section light-background">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Témoignages</h2>
+                <p>Découvrez ce que disent nos clients sur notre plateforme et la qualité de nos services. Leur
+                    satisfaction est
+                    notre plus grande réussite.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+                            <h3>Sophie LABOU</h3>
+                            <h4>Directrice des Ventes</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>Nous avons organisé une campagne promotionnelle en utilisant la plateforme
+                                    NatYaBip, et les
+                                    résultats ont
+                                    dépassé nos attentes. Les rapports détaillés nous ont aidés à affiner nos stratégies
+                                    pour nos
+                                    prochaines campagnes.</span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img" alt="">
+                            <h3>Anonyme</h3>
+                            <h4>Commercial</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>La rapidité d’envoi et la fiabilité sont impressionnantes. En période de forte
+                                    affluence, comme
+                                    les fêtes de fin d’année, la plateforme a été un véritable atout pour maintenir le
+                                    lien avec nos
+                                    clients.</span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img" alt="">
+                            <h3>Ruth T.</h3>
+                            <h4>Responsable Relation Client</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>La possibilité de segmenter les messages a changé notre manière de communiquer.
+                                    Nous avons observé
+                                    une nette amélioration de la satisfaction client, avec des retours positifs sur nos
+                                    offres
+                                    personnalisées.</span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-4.png" class="testimonial-img" alt="">
+                            <h3>Pakidam YENDAKIE</h3>
+                            <h4>Gérant de boutique</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>Grâce à cette plateforme, nous avons pu atteindre nos clients en un temps record.
+                                    La simplicité
+                                    d'utilisation et les options de personnalisation ont permis d'augmenter nos taux de
+                                    réponse de 30 % en
+                                    seulement un mois.</span>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+
+            </div>
+        </section><!-- /Testimonials Section -->
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+            <div class="container d-flex justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-delay="100" style="min-height: 200px;">
+                <div class="stats-item text-center">
+                    <i class="bi bi-headset" style="font-size: 3rem; color: #fd590d;"></i>
+                    <p style="font-size:1.5em;">Support disponible <strong>24h/24 et 7j/7</strong></p>
+                </div>
+            </div>
+        </section><!-- /Stats Section -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section light-background">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Vous trouverez ci-dessous nos informations de contact</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Infos contact</h3>
+                            <p>Besoin d'informations ou d'accompagnement ? Contactez-nous, nous sommes là pour vous
+                                répondre
+                                rapidement !
+                            </p>
+
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Localisation</h4>
+                                    <p>Lomé-TOGO</p>
+                                    <p>Qtr Adéwui, Bvd de la Kara</p>
+                                    <p>EASY SERVICES</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-square-phone"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Téléphone</h4>
+                                    <p>+228 98 38 41 41</p>
+                                    <p>+228 93 89 92 54</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@natyabip.com" target="_blank" class="__cf_email__"
+                                            data-cfemail="f49d9a929bb4918c9599849891da979b99">[info@natyabip.com]</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                            <h3>Contactez-nous</h3>
+                            <p>Rapprochez-vous de nous pour toute question ou assistance. Nous sommes disponibles pour
+                                répondre à vos
+                                besoins avec rapidité et efficacité.
+                            </p>
+
+                            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <div class="row gy-4">
+
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Votre nom"
+                                            required="">
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <input type="email" class="form-control" name="email" placeholder="Votre mail"
+                                            required="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" name="subject" placeholder="Sujet"
+                                            required="">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                            required=""></textarea>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <div class="loading">Loading</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                        <button type="submit" class="btn">Envoyer le Message</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /Contact Section -->
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename"> <img src="assets/img/easy-logo.png" alt="logo easyservices" width="150"
+                                height="auto"></span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>Lomé-TOGO</p>
+                        <p>Qte Adewui, Bvd de la Kara</p>
+                        <p class="mt-3"><strong>Téléphone:</strong> <span>(+228) 93 89 92 54 / 98 38 41 41</span></p>
+                        <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="650c0b030a25001d04081509004b060a08">[info@natyabip.com]</a></span></p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Liens utils</h4>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="index.html#about">A propos</a></li>
+                        <li><a href="index.html#services">Fonctionnalités</a></li>
+                        <li><a href="index.html#pricing">Tarifs</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <!-- <li><a href="#">Privacy policy</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Autres liens utils</h4>
+                    <ul>
+                        <li><a href="https://portail.natyabip.com/login">Connexion</a></li>
+                        <li><a href="https://portail.natyabip.com/open-account">Ouvrir un compte</a></li>
+                        <li><img src="assets/img/logo.png" alt="" height="60"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename"> <img src="assets/img/easy-logo.png"
+                        alt="logo easyservices" width="120" height="auto"> Tous droits réservés</span></p>
+            <div class="credits">
+                Designed by <a href="https://easyservices.tg">easyservices</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="fa-solid fa-arrow-up"></i></a>
+    <!-- Vendor JS Files -->
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="includes/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="includes/php-email-form/validate.js"></script>
+    <script src="includes/aos/aos.js"></script>
+    <script src="includes/glightbox/js/glightbox.min.js"></script>
+    <script src="includes/swiper/swiper-bundle.min.js"></script>
+    <script src="includes/purecounter/purecounter_vanilla.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Fonction pour charger le fichier JSON
+        function loadCountryData() {
+            // Charger le fichier JSON contenant les informations sur les pays
+            fetch('countries.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Récupérer le paramètre 'q' dans l'URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const countryName = urlParams.get('q'); // Par exemple, 'Togo'
+
+                    if (countryName) {
+                        // Trouver le pays correspondant dans les données JSON
+                        const country = data.countries_afford.find(
+                            country => country.name.toLowerCase() === countryName.toLowerCase()
+                        );
+
+                        if (country) {
+                            // Mettre à jour le titre de la page
+                            document.title = `NatYaBip | Tarif ${country.name}`;
+
+                            // Mettre à jour tous les éléments ayant la classe 'country_name'
+                            const countryNameElements = document.querySelectorAll('.country_name');
+                            countryNameElements.forEach(element => {
+                                element.textContent = country.name.toUpperCase();
+                            });
+
+                            // Afficher les opérateurs dans le div #operators
+                            const operatorsDiv = document.getElementById('operators');
+                            operatorsDiv.innerHTML = ''; // Réinitialiser le contenu
+
+                            country.networks.forEach(network => {
+                                // Créer un élément pour chaque opérateur
+                                const operatorElement = document.createElement('div');
+                                operatorElement.className = 'operator-item alert alert-warning d-flex align-items-center mb-2';
+
+                                // Ajouter une icône pour l'opérateur (par exemple, une icône générique de réseau)
+                                const iconElement = document.createElement('i');
+                                iconElement.className = 'bi bi-broadcast me-2'; // Utilisation de Bootstrap Icons
+                                operatorElement.appendChild(iconElement);
+
+                                // Ajouter le texte de l'opérateur et son tarif
+                                const textElement = document.createElement('span');
+                                textElement.style.fontWeight ="bold";
+                                textElement.textContent = `${network.name} - Tarif : ${network.tarif} €/SMS`;
+                                operatorElement.appendChild(textElement);
+
+                                // Ajouter l'élément complet au div #operators
+                                operatorsDiv.appendChild(operatorElement);
+                            });
+
+                            // Ajouter un bouton d'achat
+                            const purchaseButton = document.createElement('button');
+                            purchaseButton.className = 'btn btn-primary mt-3';
+                            purchaseButton.textContent = 'Acheter';
+                            purchaseButton.style.backgroundColor = '#fd590d'; // Couleur de fond
+                            purchaseButton.style.borderColor = '#fd590d'; // Couleur de la bordure
+                            purchaseButton.style.borderRadius = '30px';
+                            purchaseButton.onclick = () => {
+                                // Rediriger vers une page descriptive d'achat
+                                window.location.href = `achat.html?q=${encodeURIComponent(country.name)}`;
+                            };
+
+
+                            // Ajouter le bouton au div #operators
+                            operatorsDiv.appendChild(purchaseButton);
+                        } else {
+                            // Si le pays n'est pas trouvé
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Pays non pris en charge',
+                                text: 'Le pays spécifié n\'est pas pris en charge par ce service.',
+                                confirmButtonText: 'OK'
+                            }).then(() => {
+                                window.location.href = 'pays.html';
+                            });
+                        }
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Erreur',
+                            text: 'Aucun pays spécifié dans l\'URL.',
+                            confirmButtonText: 'OK'
+                        }).then(() => {
+                            window.location.href = 'pays.html';
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error("Erreur lors du chargement du fichier JSON : ", error);
+                    // Swal.fire({
+                    //     icon: 'error',
+                    //     title: 'Erreur',
+                    //     text: 'Impossible de charger les données des pays.',
+                    //     confirmButtonText: 'OK'
+                    // });
+                });
+        }
+        // Appeler la fonction pour charger et afficher les données
+        loadCountryData();
+
+    </script>
+</body>
+
+</html>
