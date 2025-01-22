@@ -254,7 +254,7 @@
             let countriesData = [];
 
             // Fonction pour charger le fichier JSON contenant les pays et méthodes de paiement
-            fetch('/countries_payments.json')
+            fetch('countries_payments.json')
                 .then(response => response.json())
                 .then(data => {
                     countriesData = data.countries_payements;
