@@ -21,6 +21,10 @@
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
                     "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@naytabip.tg\nOu par WhatsApp en précisant votre compte."
+                },
+                {
+                    "method": "Espece",
+                    "instructions": "Veuillez vous rendre à notre agence pour effectuer le paiement en espèces ou par chèque.\n\n Adresse : Lomé-Togo, Bvd de la Kara Imm EASYSERVICES."
                 }
             ]
         },
