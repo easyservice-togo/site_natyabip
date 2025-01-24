@@ -658,7 +658,8 @@
                                 // Ajouter le texte de l'opérateur et son tarif
                                 const textElement = document.createElement('span');
                                 textElement.style.fontWeight ="bold";
-                                textElement.textContent = `${network.name} - Tarif : ${network.tarif} €/SMS`;
+                                // textElement.textContent = `${network.name} - Tarif : ${network.tarif} €/SMS`;
+                                textElement.textContent = `${network.name}`;
                                 operatorElement.appendChild(textElement);
 
                                 // Ajouter l'élément complet au div #operators

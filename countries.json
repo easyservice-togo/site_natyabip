@@ -4,248 +4,502 @@
             "name": "Togo",
             "networks": [
                 {
-                    "name": "Togocel",
-                    "tarif": 0.05
+                    "name": "TOGOCEL",
+                    "tarif": ""
                 },
                 {
                     "name": "Moov Africa Togo",
-                    "tarif": 0.04
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Benin",
             "networks": [
                 {
-                    "name": "MTN Benin",
-                    "tarif": 0.06
+                    "name": "CELTIS",
+                    "tarif": ""
                 },
                 {
-                    "name": "Moov Africa Benin",
-                    "tarif": 0.05
+                    "name": "MOOV BJ",
+                    "tarif": ""
+                },
+                {
+                    "name": "MTN BJ",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Cote d'Ivoire",
             "networks": [
                 {
-                    "name": "MTN Côte d'Ivoire",
-                    "tarif": 0.07
+                    "name": "MOOV CI",
+                    "tarif": ""
                 },
                 {
-                    "name": "Orange Côte d'Ivoire",
-                    "tarif": 0.06
+                    "name": "MTN CI",
+                    "tarif": ""
                 },
                 {
-                    "name": "Moov Africa Côte d'Ivoire",
-                    "tarif": 0.05
+                    "name": "ORANGE CI",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Senegal",
             "networks": [
                 {
-                    "name": "Orange Senegal",
-                    "tarif": 0.08
+                    "name": "EXPRESSO SN",
+                    "tarif": ""
                 },
                 {
-                    "name": "Tigo",
-                    "tarif": 0.07
+                    "name": "ORANGE SN",
+                    "tarif": ""
                 },
                 {
-                    "name": "Expresso",
-                    "tarif": 0.06
+                    "name": "TIGO SN",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Gabon",
             "networks": [
                 {
-                    "name": "Airtel Gabon",
-                    "tarif": 0.06
+                    "name": "AIRTEL.GA",
+                    "tarif": ""
                 },
                 {
-                    "name": "Moov Africa Gabon Telecom",
-                    "tarif": 0.05
+                    "name": "MOOV.GA",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "France",
             "networks": [
                 {
-                    "name": "Orange France",
-                    "tarif": 0.10
-                },
-                {
-                    "name": "SFR",
-                    "tarif": 0.09
-                },
-                {
-                    "name": "Bouygues Telecom",
-                    "tarif": 0.08
-                },
-                {
-                    "name": "Free Mobile",
-                    "tarif": 0.07
+                    "name": "OPERATEURS FRANCE",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "USA",
             "networks": [
                 {
-                    "name": "AT&T",
-                    "tarif": 0.12
-                },
-                {
-                    "name": "T-Mobile",
-                    "tarif": 0.11
-                },
-                {
-                    "name": "Verizon",
-                    "tarif": 0.10
-                },
-                {
-                    "name": "Sprint",
-                    "tarif": 0.09
+                    "name": "OPERATEURS USA",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Allemagne",
             "networks": [
                 {
-                    "name": "Telekom",
-                    "tarif": 0.08
-                },
-                {
-                    "name": "Vodafone",
-                    "tarif": 0.07
-                },
-                {
-                    "name": "O2 Germany",
-                    "tarif": 0.06
+                    "name": "OPERATEURS ALLEMAGNE",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Belgique",
             "networks": [
                 {
-                    "name": "Proximus",
-                    "tarif": 0.07
+                    "name": "ORANGE",
+                    "tarif": ""
                 },
                 {
-                    "name": "Orange Belgium",
-                    "tarif": 0.06
+                    "name": "PROXIMUS",
+                    "tarif": ""
                 },
                 {
-                    "name": "Base",
-                    "tarif": 0.05
+                    "name": "TELENET",
+                    "tarif": ""
+                },
+                {
+                    "name": "VECTONE MOBILE",
+                    "tarif": ""
+                },
+                {
+                    "name": "VOO",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Burkina Faso",
             "networks": [
                 {
-                    "name": "Onatel",
-                    "tarif": 0.06
+                    "name": "MOOV",
+                    "tarif": ""
                 },
                 {
-                    "name": "Telecel Faso",
-                    "tarif": 0.05
+                    "name": "ORANGE BF",
+                    "tarif": ""
                 },
                 {
-                    "name": "Moov Africa Burkina Faso",
-                    "tarif": 0.04
+                    "name": "TELECEL",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Cameroun",
             "networks": [
                 {
-                    "name": "MTN Cameroon",
-                    "tarif": 0.06
+                    "name": "CAMTEL",
+                    "tarif": ""
                 },
                 {
-                    "name": "Orange Cameroon",
-                    "tarif": 0.05
+                    "name": "MTN CM",
+                    "tarif": ""
                 },
                 {
-                    "name": "Nexttel",
-                    "tarif": 0.04
+                    "name": "NEXTEL",
+                    "tarif": ""
+                },
+                {
+                    "name": "ORANGE CM",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Canada",
             "networks": [
                 {
-                    "name": "Rogers",
-                    "tarif": 0.11
-                },
-                {
-                    "name": "Bell",
-                    "tarif": 0.10
-                },
-                {
-                    "name": "Telus",
-                    "tarif": 0.09
+                    "name": "OPERATEURS CANADA",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Guinée équatoriale",
             "networks": [
                 {
-                    "name": "GETESA",
-                    "tarif": 0.06
+                    "name": "GECOMSA",
+                    "tarif": ""
                 },
                 {
-                    "name": "Muni",
-                    "tarif": 0.05
+                    "name": "GETESA",
+                    "tarif": ""
+                },
+                {
+                    "name": "MUNI",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "Mali",
             "networks": [
                 {
-                    "name": "Orange Mali",
-                    "tarif": 0.05
+                    "name": "MALITEL",
+                    "tarif": ""
                 },
                 {
-                    "name": "Moov Africa Malitel",
-                    "tarif": 0.04
+                    "name": "ORANGE MALI",
+                    "tarif": ""
+                },
+                {
+                    "name": "TELECEL",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         },
         {
             "name": "RDC",
             "networks": [
                 {
-                    "name": "Vodacom Congo",
-                    "tarif": 0.07
+                    "name": "AFRICELL RDC",
+                    "tarif": ""
                 },
                 {
-                    "name": "Airtel RDC",
-                    "tarif": 0.06
+                    "name": "AIRTEL RDC",
+                    "tarif": ""
                 },
                 {
-                    "name": "Orange RDC",
-                    "tarif": 0.05
+                    "name": "ORANGE RDC",
+                    "tarif": ""
                 },
                 {
-                    "name": "Africell",
-                    "tarif": 0.04
+                    "name": "VODACOM RDC",
+                    "tarif": ""
                 }
-            ]
+            ],
+            "packs": {
+                "starter": {
+                    "interval": "5 000",
+                    "price": 10
+                },
+                "pro": {
+                    "interval": "5 001-50 000",
+                    "price": 8
+                },
+                "business": {
+                    "interval": "50 001-100 000",
+                    "price": 7
+                },
+                "enterprise": {
+                    "interval": "100 000+",
+                    "price": 6
+                }
+            }
         }
     ]
 }
