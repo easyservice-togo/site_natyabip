@@ -2,6 +2,7 @@
     "countries_payements": [
         {
             "name": "Togo",
+            "code": "TG",
             "payment_methods": [
                 {
                     "method": "Mobile Money",
@@ -30,6 +31,7 @@
         },
         {
             "name": "Benin",
+            "code": "BJ",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -40,6 +42,7 @@
         },
         {
             "name": "Cote d'Ivoire",
+            "code": "CI",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -50,6 +53,7 @@
         },
         {
             "name": "Senegal",
+            "code": "SN",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -60,6 +64,7 @@
         },
         {
             "name": "Gabon",
+            "code": "GA",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -70,6 +75,7 @@
         },
         {
             "name": "France",
+            "code": "FR",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -80,6 +86,7 @@
         },
         {
             "name": "USA",
+            "code": "US",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -90,6 +97,7 @@
         },
         {
             "name": "Allemagne",
+            "code": "DE",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -100,6 +108,7 @@
         },
         {
             "name": "Belgique",
+            "code": "BE",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -110,6 +119,7 @@
         },
         {
             "name": "Burkina Faso",
+            "code": "BF",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -120,6 +130,7 @@
         },
         {
             "name": "Cameroun",
+            "code": "CM",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -130,6 +141,7 @@
         },
         {
             "name": "Canada",
+            "code": "CA",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -140,6 +152,7 @@
         },
         {
             "name": "Guinée équatoriale",
+            "code": "GQ",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -150,6 +163,7 @@
         },
         {
             "name": "Mali",
+            "code": "ML",
             "payment_methods": [
                 {
                     "method": "PayPal",
@@ -160,6 +174,7 @@
         },
         {
             "name": "RDC",
+            "code": "CD",
             "payment_methods": [
                 {
                     "method": "PayPal",

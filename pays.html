@@ -636,22 +636,23 @@
   </script>
   <script>
     const countries_afford = [
-      { name: 'Togo', lat: 8.619543, lon: 0.824782 },
-      { name: 'Benin', lat: 9.30769, lon: 2.315834 },
-      { name: 'Cote d\'Ivoire', lat: 7.539989, lon: -5.54708 },
-      { name: 'Senegal', lat: 14.497401, lon: -14.452362 },
-      { name: 'Gabon', lat: -0.803689, lon: 11.609444 },
-      { name: 'France', lat: 46.603354, lon: 1.888334 },
-      { name: 'USA', lat: 37.09024, lon: -95.712891 },
-      { name: 'Allemagne', lat: 51.1657, lon: 10.4515 },
-      { name: 'Belgique', lat: 50.8503, lon: 4.3517 },
-      { name: 'Burkina Faso', lat: 12.2383, lon: -1.5616 },
-      { name: 'Cameroun', lat: 3.8480, lon: 11.5021 },
-      { name: 'Canada', lat: 56.1304, lon: -106.3468 },
-      { name: 'Guinée équatoriale', lat: 1.6508, lon: 10.2679 },
-      { name: 'Mali', lat: 17.5707, lon: -3.9962 },
-      { name: 'RDC', lat: -4.0383, lon: 21.7587 }
+      { name: 'Togo', code: 'TG', lat: 8.619543, lon: 0.824782 },
+      { name: 'Benin', code: 'BJ', lat: 9.30769, lon: 2.315834 },
+      { name: 'Cote d\'Ivoire', code: 'CI', lat: 7.539989, lon: -5.54708 },
+      { name: 'Senegal', code: 'SN', lat: 14.497401, lon: -14.452362 },
+      { name: 'Gabon', code: 'GA', lat: -0.803689, lon: 11.609444 },
+      { name: 'France', code: 'FR', lat: 46.603354, lon: 1.888334 },
+      { name: 'USA', code: 'US', lat: 37.09024, lon: -95.712891 },
+      { name: 'Allemagne', code: 'DE', lat: 51.1657, lon: 10.4515 },
+      { name: 'Belgique', code: 'BE', lat: 50.8503, lon: 4.3517 },
+      { name: 'Burkina Faso', code: 'BF', lat: 12.2383, lon: -1.5616 },
+      { name: 'Cameroun', code: 'CM', lat: 3.8480, lon: 11.5021 },
+      { name: 'Canada', code: 'CA', lat: 56.1304, lon: -106.3468 },
+      { name: 'Guinée équatoriale', code: 'GQ', lat: 1.6508, lon: 10.2679 },
+      { name: 'Mali', code: 'ML', lat: 17.5707, lon: -3.9962 },
+      { name: 'RDC', code: 'CD', lat: -4.0383, lon: 21.7587 }
     ];
+
 
     // Trier la liste des pays par ordre alphabétique
     countries.sort((a, b) => a.name.localeCompare(b.name));
