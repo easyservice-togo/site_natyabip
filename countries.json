@@ -2,6 +2,7 @@
     "countries_afford": [
         {
             "name": "Togo",
+            "code": "TG",
             "networks": [
                 {
                     "name": "TOGOCEL",
@@ -33,6 +34,7 @@
         },
         {
             "name": "Benin",
+            "code": "BJ",
             "networks": [
                 {
                     "name": "CELTIS",
@@ -68,6 +70,7 @@
         },
         {
             "name": "Cote d'Ivoire",
+            "code": "CI",
             "networks": [
                 {
                     "name": "MOOV CI",
@@ -103,6 +106,7 @@
         },
         {
             "name": "Senegal",
+            "code": "SN",
             "networks": [
                 {
                     "name": "EXPRESSO SN",
@@ -138,6 +142,7 @@
         },
         {
             "name": "Gabon",
+            "code": "GA",
             "networks": [
                 {
                     "name": "AIRTEL.GA",
@@ -169,6 +174,7 @@
         },
         {
             "name": "France",
+            "code": "FR",
             "networks": [
                 {
                     "name": "OPERATEURS FRANCE",
@@ -196,6 +202,7 @@
         },
         {
             "name": "USA",
+            "code": "US",
             "networks": [
                 {
                     "name": "OPERATEURS USA",
@@ -223,6 +230,7 @@
         },
         {
             "name": "Allemagne",
+            "code": "DE",
             "networks": [
                 {
                     "name": "OPERATEURS ALLEMAGNE",
@@ -250,6 +258,7 @@
         },
         {
             "name": "Belgique",
+            "code": "BE",
             "networks": [
                 {
                     "name": "ORANGE",
@@ -293,6 +302,7 @@
         },
         {
             "name": "Burkina Faso",
+            "code": "BF",
             "networks": [
                 {
                     "name": "MOOV",
@@ -328,6 +338,7 @@
         },
         {
             "name": "Cameroun",
+            "code": "CM",
             "networks": [
                 {
                     "name": "CAMTEL",
@@ -367,6 +378,7 @@
         },
         {
             "name": "Canada",
+            "code": "CA",
             "networks": [
                 {
                     "name": "OPERATEURS CANADA",
@@ -394,6 +406,7 @@
         },
         {
             "name": "Guinée équatoriale",
+            "code": "GQ",
             "networks": [
                 {
                     "name": "GECOMSA",
@@ -429,6 +442,7 @@
         },
         {
             "name": "Mali",
+            "code": "ML",
             "networks": [
                 {
                     "name": "MALITEL",
@@ -464,6 +478,7 @@
         },
         {
             "name": "RDC",
+            "code": "CD",
             "networks": [
                 {
                     "name": "AFRICELL RDC",

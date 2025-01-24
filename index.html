@@ -28,7 +28,6 @@
   <link href="includes/aos/aos.css" rel="stylesheet">
   <link href="includes/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="includes/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -807,7 +806,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Grille tarifaire - TOGO</h2>
+        <h2>Grille tarifaire - <span id="countryName">TOGO</span></h2>
         <p>Des offres flexibles et compétitives pour vos campagnes SMS, adaptées aux entreprises de toutes tailles.</p>
       </div><!-- End Section Title -->
 
@@ -820,11 +819,11 @@
             <div class="pricing-card popular" style="background-color: #f38f54; color: #fff;">
               <!-- <div class="popular-badge">Most Popular</div> -->
               <h3>STARTER</h3>
-              <h4>5 000 <span class="period">SMS</span></h4>
+              <h4><span id="range_starter">5 000</span> <span class="period">SMS</span></h4>
               <div class="price">
-                <span class="amount">10</span>
-                <span class="currency" style="color:white;">F.CFA</span>
-                <span class="period">/ sms</span>
+                <span class="amount" id="amount_starter">10</span>
+                <span class="currency" id="currency_starter" style="color:white;">F.CFA</span>
+                <span class="period" id="period_starter">/ sms</span>
               </div>
               <!-- <ul class="features-list">
                 <li>
@@ -853,11 +852,11 @@
             <div class="pricing-card popular" style="background-color: #f36f23; color: #fff;">
               <!-- <div class="popular-badge">Most Popular</div> -->
               <h3>PRO</h3>
-              <h4>5 001 - 50 000 <span class="period">SMS</span></h4>
+              <h4> <span id="range_pro">5 001 - 50 000</span> <span class="period">SMS</span></h4>
               <div class="price">
-                <span class="amount">8</span>
-                <span class="currency">F.CFA</span>
-                <span class="period">/ sms</span>
+                <span class="amount" id="amount_pro">8</span>
+                <span class="currency" id="currency_pro">F.CFA</span>
+                <span class="period" id="period_pro">/ sms</span>
               </div>
               <!-- <ul class="features-list">
                 <li>
@@ -885,11 +884,11 @@
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="pricing-card popular" style="background-color: #f56512; color: #fff;">
               <h3>BUSINESS</h3>
-              <h4>50 001 - 100 000 <span class="period">SMS</span></h4>
+              <h4><span id="range_business">50 001 - 100 000</span> <span class="period">SMS</span></h4>
               <div class="price">
-                <span class="amount">7</span>
-                <span class="currency">F.CFA</span>
-                <span class="period">/ sms</span>
+                <span class="amount" id="amount_business">7</span>
+                <span class="currency" id="currency_business">F.CFA</span>
+                <span class="period" id="period_business">/ sms</span>
               </div>
               <!-- <ul class="features-list">
                 <li>
@@ -916,11 +915,11 @@
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="50">
             <div class="pricing-card popular">
               <h3>ENTREPRISE</h3>
-              <h4>100 000 + <span class="period">SMS</span></h4>
+              <h4><span id="range_enterprise">100 000 +</span> <span class="period">SMS</span></h4>
               <div class="price">
-                <span class="amount">6</span>
-                <span class="currency">F.CFA</span>
-                <span class="period">/ sms</span>
+                <span class="amount" id="amount_enterprise">6</span>
+                <span class="currency" id="currency_enterprise">F.CFA</span>
+                <span class="period" id="period_enterprise">/ sms</span>
               </div>
               <!-- <ul class="features-list">
                 <li>
@@ -1211,7 +1210,67 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script language="Javascript">
-    console.log(geoplugin_countryCode())
+
+    async function getCountry() {
+      try {
+        const response = await fetch('http://ip-api.com/json/');
+        const data = await response.json();
+        let countryCode = data.countryCode;
+
+        console.log(`Pays : ${data.country} (Code : ${data.countryCode})`);
+        return countryCode; // Retourne le code du pays
+      } catch (error) {
+        console.error('Erreur lors de la récupération du pays :', error);
+        return null; // Retourne null en cas d'erreur
+      }
+    }
+
+    async function main() {
+      const countryCode = await getCountry(); // Récupère le code du pays
+      updatePacksFromJson(countryCode); // Passe le code du pays à la fonction de mise à jour
+    }
+    main();
+
+    function updatePacksFromJson(countryCode) {
+
+      fetch('./countries.json') // Assurez-vous que le fichier est dans le bon répertoire
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Erreur lors du chargement du fichier JSON");
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Rechercher le pays correspondant dans le fichier JSON
+          const country = data.countries_afford.find(c => c.code === countryCode);
+
+          if (country) {
+            console.log(`Pays détecté : ${country.name}`);
+            document.getElementById("countryName").innerText = country.name;
+
+            // Parcourir les packs et mettre à jour les informations sur le site
+            const packs = country.packs;
+
+            // Mettre à jour chaque pack
+            document.getElementById("range_starter").innerText = packs.starter.interval;
+            document.getElementById("amount_starter").innerText = packs.starter.price;
+
+            document.getElementById("range_pro").innerText = packs.pro.interval;
+            document.getElementById("amount_pro").innerText = packs.pro.price;
+
+            document.getElementById("range_business").innerText = packs.business.interval;
+            document.getElementById("amount_business").innerText = packs.business.price;
+
+            document.getElementById("range_enterprise").innerText = packs.enterprise.interval;
+            document.getElementById("amount_enterprise").innerText = packs.enterprise.price;
+          } else {
+            console.error("Aucun pays correspondant trouvé pour le code : " + countryCode);
+          }
+        })
+        .catch(error => {
+          console.error("Erreur lors du traitement du fichier JSON : ", error);
+        });
+    }
   </script>
 </body>
 
