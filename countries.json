@@ -124,19 +124,19 @@
             "packs": {
                 "starter": {
                     "interval": "5 000",
-                    "price": 10
+                    "price": 20
                 },
                 "pro": {
                     "interval": "5 001-50 000",
-                    "price": 8
+                    "price": 15
                 },
                 "business": {
                     "interval": "50 001-100 000",
-                    "price": 7
+                    "price": 10
                 },
                 "enterprise": {
                     "interval": "100 000+",
-                    "price": 6
+                    "price": 8
                 }
             }
         },
