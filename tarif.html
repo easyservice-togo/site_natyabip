@@ -232,7 +232,7 @@
             </div>
         </section><!-- /Call To Action Section -->
         <div class="container text-center">
-            <h4 class="fw-bold" style="font-size: 2rem;"> Opérateurs disponibles pour l'envoi de SMS vers <span
+            <h4 class="fw-bold" style="font-size: 2rem; margin-bottom: 30px;"> Opérateurs disponibles pour l'envoi de SMS vers <span
                     class="country_name"></span></h4>
             <div class="alert alert-warning" role="alert" id="operators">
 
@@ -644,27 +644,35 @@
                             // Afficher les opérateurs dans le div #operators
                             const operatorsDiv = document.getElementById('operators');
                             operatorsDiv.innerHTML = ''; // Réinitialiser le contenu
+                            operatorsDiv.className = 'row'; // Ajouter la classe row
 
                             country.networks.forEach(network => {
+                                // Créer une colonne pour chaque opérateur
+                                const colDiv = document.createElement('div');
+                                colDiv.className = 'col-md-4 mb-2'; // Chaque opérateur prendra 4 colonnes sur un total de 12
+
                                 // Créer un élément pour chaque opérateur
                                 const operatorElement = document.createElement('div');
-                                operatorElement.className = 'operator-item alert alert-warning d-flex align-items-center mb-2';
+                                operatorElement.className = 'operator-item alert alert-warning d-flex align-items-center';
 
-                                // Ajouter une icône pour l'opérateur (par exemple, une icône générique de réseau)
+                                // Ajouter une icône pour l'opérateur (Bootstrap Icons)
                                 const iconElement = document.createElement('i');
-                                iconElement.className = 'bi bi-broadcast me-2'; // Utilisation de Bootstrap Icons
+                                iconElement.className = 'bi bi-broadcast me-2';
                                 operatorElement.appendChild(iconElement);
 
-                                // Ajouter le texte de l'opérateur et son tarif
+                                // Ajouter le texte de l'opérateur
                                 const textElement = document.createElement('span');
-                                textElement.style.fontWeight ="bold";
-                                // textElement.textContent = `${network.name} - Tarif : ${network.tarif} €/SMS`;
+                                textElement.style.fontWeight = "bold";
                                 textElement.textContent = `${network.name}`;
                                 operatorElement.appendChild(textElement);
 
-                                // Ajouter l'élément complet au div #operators
-                                operatorsDiv.appendChild(operatorElement);
+                                // Ajouter l'élément opérateur à la colonne
+                                colDiv.appendChild(operatorElement);
+
+                                // Ajouter la colonne complète à la ligne #operators
+                                operatorsDiv.appendChild(colDiv);
                             });
+
 
                             // Ajouter un bouton d'achat
                             const purchaseButton = document.createElement('button');

@@ -587,7 +587,12 @@
   <script> const svg = d3.select("svg"); const tooltip = d3.select("#tooltip"); const projection = d3.geoMercator().scale(150).translate([480, 250]); const path = d3.geoPath().projection(projection); d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").then(function (data) { svg.selectAll("path").data(data.features).enter().append("path").attr("class", "country").attr("d", path).on("mouseover", function (event, d) { d3.select(this).classed("ripple", true); tooltip.style("opacity", 1).html(d.properties.name).style("left", (event.pageX + 10) + "px").style("top", (event.pageY - 10) + "px"); }).on("mouseout", function () { d3.select(this).classed("ripple", false); tooltip.style("opacity", 0); }); }); </script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    const map = L.map('map').setView([20, 0], 2);
+    const map = L.map('map', {
+      zoomControl: false,       // Désactiver les boutons de zoom (+/-)
+      scrollWheelZoom: false,   // Désactiver le zoom avec la molette de la souris
+      doubleClickZoom: false,   // Désactiver le zoom avec le double-clic
+      touchZoom: false,
+    }).setView([20, 0], 2);
 
     // Ajouter une couche de tuiles OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -609,7 +614,8 @@
       { name: 'Canada', lat: 56.1304, lon: -106.3468 },
       { name: 'Guinée équatoriale', lat: 1.6508, lon: 10.2679 },
       { name: 'Mali', lat: 17.5707, lon: -3.9962 },
-      { name: 'RDC', lat: -4.0383, lon: 21.7587 }
+      { name: 'RDC', lat: -4.0383, lon: 21.7587 },
+      { name: 'NIGER', code: 'NE', lat: 17.6078, lon: 8.0817 }
 
 
     ];
@@ -650,7 +656,8 @@
       { name: 'Canada', code: 'CA', lat: 56.1304, lon: -106.3468 },
       { name: 'Guinée équatoriale', code: 'GQ', lat: 1.6508, lon: 10.2679 },
       { name: 'Mali', code: 'ML', lat: 17.5707, lon: -3.9962 },
-      { name: 'RDC', code: 'CD', lat: -4.0383, lon: 21.7587 }
+      { name: 'RDC', code: 'CD', lat: -4.0383, lon: 21.7587 },
+      { name: 'NIGER', code: 'NE', lat: 17.6078, lon: 8.0817 }
     ];
 
 
