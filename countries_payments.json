@@ -16,12 +16,12 @@
                             "instructions": "Transférer :\nYas : *145*5*Montant*1000316*Code secret#\n\nFrais de processing : 3%. Exemple : pour 10 000, il faut transférer 10 300."
                         }
                     ],
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 },
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 },
                 {
                     "method": "Espece",
@@ -36,7 +36,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -47,7 +47,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -58,7 +58,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -69,7 +69,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -80,7 +80,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -91,7 +91,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -102,7 +102,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -113,7 +113,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -124,7 +124,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -135,7 +135,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -146,7 +146,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -157,7 +157,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -168,7 +168,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -179,7 +179,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         },
@@ -190,7 +190,7 @@
                 {
                     "method": "PayPal",
                     "instructions": "Transférer :\nSur le compte PayPal : easypaypal@easyservices.tg",
-                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à financesms@natyabip.tg\nOu par WhatsApp en précisant votre compte."
+                    "proof_of_payment": "Fournir la preuve du transfert :\nPar mail à finance@natyabip.com\nOu par WhatsApp en précisant votre compte."
                 }
             ]
         }
